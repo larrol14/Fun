@@ -1,0 +1,9 @@
+{
+  "name": "fun-ai-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:all": "node start-all.mjs",
+    "start:ipad": "node ipad-app/server.mjs"
+  }
+}

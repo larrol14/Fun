@@ -1,0 +1,9 @@
+{
+  "name": "AI Desk",
+  "short_name": "AI Desk",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f3ed",
+  "theme_color": "#f6f3ed",
+  "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

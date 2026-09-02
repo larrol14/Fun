@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f6f3ed">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="AI Desk">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="apple-touch-icon" href="./icon.svg">
+    <link rel="stylesheet" href="./styles.css">
+    <title>AI Desk</title>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div><p class="eyebrow">DEIN PERSÖNLICHER DESK</p><h1>AI Desk</h1></div>
+        <div class="status"><span></span><span id="network-status">Offline bereit</span></div>
+      </header>
+
+      <section class="hero">
+        <div><p class="eyebrow">HEUTE</p><h2>Was möchtest du erledigen?</h2><p class="muted">Deine Aufgaben bleiben auf dem iPad gespeichert.</p></div>
+        <button class="primary" id="focus-button">Neue Aufgabe</button>
+      </section>
+
+      <section class="grid">
+        <article class="panel task-panel"><div class="panel-heading"><h3>Aufgaben</h3><span id="task-count">0 offen</span></div><form id="task-form"><input id="task-input" placeholder="Aufgabe hinzufügen" autocomplete="off"><button aria-label="Aufgabe hinzufügen">+</button></form><ul id="task-list"></ul></article>
+        <article class="panel alarm-panel"><div class="panel-heading"><h3>Wecker</h3><span>lokal</span></div><div class="alarm-time" id="alarm-time">--:--</div><div class="alarm-row"><input id="alarm-input" type="time"><button class="secondary" id="alarm-button">Wecker setzen</button></div><p class="muted" id="alarm-note">Erinnerung wird auf diesem Gerät gespeichert.</p></article>
+      </section>
+
+      <section class="panel tools"><div class="panel-heading"><div><p class="eyebrow">DEINE WERKZEUGE</p><h3>Verbunden, wenn du sie brauchst</h3></div></div><div class="tool-grid"><a class="tool" href="http://localhost:20128/dashboard"><b>OmniRoute</b><span>Dashboard & Router</span><i>↗</i></a><a class="tool" href="http://localhost:3000"><b>Jarvis</b><span>Assistant</span><i>↗</i></a><a class="tool" href="http://localhost:1212"><b>GodMode</b><span>Desktop-Modul</span><i>↗</i></a></div></section>
+      <p class="footer-note">AI Desk funktioniert offline. KI-Dienste brauchen eine Verbindung.</p>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
