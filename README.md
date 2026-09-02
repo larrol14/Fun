@@ -1,5 +1,7 @@
 # Gemeinsame AI-App
 
+Die iPad-PWA wird über GitHub Pages veröffentlicht.
+
 Die drei Projekte liegen gemeinsam im Workspace:
 
 - `OmniRoute`: Dashboard und AI-Router auf Port `20128`
